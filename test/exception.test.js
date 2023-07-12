@@ -5,3 +5,7 @@ test('exception', () => {
   expect(() => callMe('Dzikri')).toThrow(MyException); // jenis exceptionnya harus sesuai baru dianggap true
   expect(() => callMe('Dzikri')).toThrow('Ups my exception happens'); // message exceptionnya harus sama persis baru dianggap true
 });
+
+test('exception not happens', () => {
+  expect(callMe('Joko')).toBe('OK');
+});
