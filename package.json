@@ -1,0 +1,25 @@
+{
+  "name": "unit-test",
+  "version": "1.0.0",
+  "description": "Belajar nodejs unit test",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "showSeed": true,
+    "verbose": true,
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "collectCoverage": true
+  },
+  "author": "Dzikri Nur Akbar",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.7",
+    "babel-jest": "^29.6.1",
+    "jest": "^29.6.1"
+  }
+}
